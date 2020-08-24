@@ -20,6 +20,7 @@ set cursorline
 set wrap
 set linebreak
 set statusline=%F%m%r%h%w\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
+colo desert
 
 "==========
 "缩进设置
@@ -44,3 +45,23 @@ nnoremap <Up> :echomsg "Use k"<cr>
 nnoremap <Down> :echomsg "Use j"<cr>
 nnoremap <Left> :echomsg "Use h"<cr>
 nnoremap <Right> :echomsg "Use l"<cr>
+
+
+"=================
+"plugins
+"=================
+call plug#begin('~/.vim/plugged')
+Plug 'junegunn/vim-easy-align'
+"Plug 'preservim/nerdtree',{'on':'NERETreeToggle'}
+Plug 'scrooloose/nerdtree',{'on':'NERDTreeToggle'} 
+call plug#end()
+
+"===========
+"映射
+"===========
+map <F2> :NERDTreeToggle<cr>
+"map <C-=> <End><cr>
+"map <C-->:<home><cr>
+"map <C-.> :echomsg "press ctrl+."
+"map <C--> <home><cr>
+map <C--> <home><cr>
