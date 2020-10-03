@@ -1,11 +1,17 @@
 "===========
 "基本设置
 "===========
+set nocompatible
 syntax on 
 set encoding=utf-8
+set backspace=indent,eol,start
 set t_Co=256
 set mouse=a
-
+set langmenu=zh_CN.UTF-8
+set imcmdline
+language messages zh_CN.UTF-8 
+source $VIMRUNTIME/delmenu.vim
+source $VIMRUNTIME/menu.vim
 "===========
 "外观设置
 "===========
